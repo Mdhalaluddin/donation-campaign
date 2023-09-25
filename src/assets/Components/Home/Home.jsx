@@ -1,12 +1,10 @@
-import Navbar from "../Navbar/Navbar";
+import Banner from "../Banner/Banner";
 
 
 const Home = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <h2>this is home section</h2>
-            
+            <Banner></Banner>
         </div>
     );
 };

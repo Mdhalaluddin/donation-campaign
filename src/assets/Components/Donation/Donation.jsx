@@ -15,11 +15,13 @@ const Donation = () => {
             // console.log(cardsDonate, cards, storedCardIds);
             setDonateCard(cardsDonate);
         }
-    }, [])
+    }, []);
+    const [cardLength, setCardLength] = useState(4);
     return (
+        <>
         <div className="grid grid-cols-2 gap-4 container mx-auto">
             {
-                donateCard.map(card => <div key={card.id} className="card card-side bg-base-100 shadow-xl">
+                donateCard.slice(0, cardLength).map(card => <div key={card.id} className="card card-side bg-base-100 shadow-xl">
                     <figure><img className="w-full" src={card.img} alt="" /></figure>
                     <div className="card-body">
                         <h2 className="card-title"></h2>
@@ -29,14 +31,20 @@ const Donation = () => {
                         <h2 className="text-2xl font-semibold">{card.Title}</h2>
                         <h3 className="text-md font-semibold"><span>$</span>{card.Price}</h3>
                         <div className="card-actions justify-start mt-3">
-                            <button className="btn btn-primary">View Details</button>
+                            <button onClick={()=> setCardLength(cards.length)} className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>)
             }
 
         </div>
-    );
+        <div className="grid justify-center mt-5">
+        <button className="btn btn-primary">Show all</button>
+        </div>
+        
+        </>
+        
+        );
 };
 
 export default Donation;

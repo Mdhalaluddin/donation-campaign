@@ -4,6 +4,7 @@ import Home from "../assets/Components/Home/Home";
 import Donation from "../assets/Components/Donation/Donation";
 import Statistics from "../assets/Components/Statistics/Statistics";
 import ErrorPage from "../assets/Components/ErrorPage/ErrorPage";
+import DonateCard from "../assets/Components/DonateCard/DonateCard";
 
 const myCrateRouter = createBrowserRouter([
     {
@@ -13,15 +14,22 @@ const myCrateRouter = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: ()=> fetch('../../public/donate.json'),
             },
             {
                 path: '/donation',
-                element: <Donation></Donation>
+                element: <Donation></Donation>,
+                loader: ()=> fetch('../../public/donate.json')
             },
             {
                 path: '/statistics',
                 element: <Statistics></Statistics>
+            },
+            {
+                path: '/cards/:id',
+                element: <DonateCard></DonateCard>,
+                loader: ()=> fetch('../../public/donate.json')
             }
         ]
     }

@@ -1,0 +1,133 @@
+[
+    {   "id": 1,
+        "img": "https://i.ibb.co/ZTp9ZWB/Education.png",
+        "Category": "Education",
+        "Category_bg": "#3498DB",
+        "Title": "Scholarship Fund",
+        "Card_bg": "#D1F2EB",
+        "Text_button_bg": "#9B59B6",
+        "Description": "Support underprivileged students by providing scholarships for their education.",
+        "Price": 50
+    },
+    {   
+        "id": 2,
+        "img": "https://i.ibb.co/6DGwpb6/Health.png",
+        "Category": "Health",
+        "Category_bg": "#2ECC71",
+        "Title": "Medical Supplies",
+        "Card_bg": "#D5DBDB",
+        "Text_button_bg": "#E74C3C",
+        "Description": "Donate essential medical supplies and equipment to healthcare facilities.",
+        "Price": 75
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/ByV0VsQ/Food.png",
+        "Category": "Food",
+        "Category_bg": "#9B59B6",
+        "Title": "Meal Assistance",
+        "Card_bg": "#FDEBD0",
+        "Text_button_bg": "#F39C12",
+        "Description": "Provide nutritious meals and food packages to families facing hunger.",
+        "Price": 30
+    },
+    {   
+        "id": 4,
+        "img": "https://i.ibb.co/tB0ZWJC/Clothing.png",
+        "Category": "Clothing",
+        "Category_bg": "#F39C12",
+        "Title": "Winter Clothing Drive",
+        "Card_bg": "#FCF3CF",
+        "Text_button_bg": "#34495E",
+        "Description": "Collect warm clothing items for those in need during the cold season.",
+        "Price": 40
+    },
+    {   
+        "id": 5,
+        "img": "https://i.ibb.co/ZTp9ZWB/Education.png",
+        "Category": "Education",
+        "Category_bg": "#3498DB",
+        "Title": "Library Development",
+        "Card_bg": "#D1F2EB",
+        "Text_button_bg": "#9B59B6",
+        "Description": "Build and equip libraries in underserved communities to promote literacy.",
+        "Price": 60
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/6DGwpb6/Health.png",
+        "Category": "Health",
+        "Category_bg": "#2ECC71",
+        "Title": "Vaccination Drive",
+        "Card_bg": "#D5DBDB",
+        "Text_button_bg": "#E74C3C",
+        "Description": "Contribute to vaccination programs for disease prevention in vulnerable populations.",
+        "Price": 25
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/ByV0VsQ/Food.png",
+        "Category": "Food",
+        "Category_bg": "#9B59B6",
+        "Title": "School Lunch Program",
+        "Card_bg": "#FDEBD0",
+        "Text_button_bg": "#F39C12",
+        "Description": "Support school lunch programs to ensure children have access to daily meals.",
+        "Price": 35
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/tB0ZWJC/Clothing.png",
+        "Category": "Clothing",
+        "Category_bg": "#F39C12",
+        "Title": "Emergency Clothing Kits",
+        "Card_bg": "#FCF3CF",
+        "Text_button_bg": "#34495E",
+        "Description": "Provide emergency clothing kits to individuals affected by disasters.",
+        "Price": 45
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/ZTp9ZWB/Education.png",
+        "Category": "Education",
+        "Category_bg": "#3498DB",
+        "Title": "Digital Learning Initiative",
+        "Card_bg": "#D1F2EB",
+        "Text_button_bg": "#9B59B6",
+        "Description": "Support digital learning resources for students in remote areas without access to schools.",
+        "Price": 70
+    },
+    {
+        "id": 10,
+        "img": "https://i.ibb.co/6DGwpb6/Health.png",
+        "Category": "Health",
+        "Category_bg": "#2ECC71",
+        "Title": "Maternal Health Care",
+        "Card_bg": "#D5DBDB",
+        "Text_button_bg": "#E74C3C",
+        "Description": "Provide prenatal and postnatal care for expectant mothers in disadvantaged communities.",
+        "Price": 90
+    },
+    {
+        "id": 11,
+        "img": "https://i.ibb.co/ByV0VsQ/Food.png",
+        "Category": "Food",
+        "Category_bg": "#9B59B6",
+        "Title": "Community Kitchen Support",
+        "Card_bg": "#FDEBD0",
+        "Text_button_bg": "#F39C12",
+        "Description": "Fund community kitchens that serve meals to homeless and low-income individuals.",
+        "Price": 40
+    },
+    {
+        "id": 12,
+        "img": "https://i.ibb.co/tB0ZWJC/Clothing.png",
+        "Category": "Clothing",
+        "Category_bg": "#F39C12",
+        "Title": "Back-to-School Clothing Drive",
+        "Card_bg": "#FCF3CF",
+        "Text_button_bg": "#34495E",
+        "Description": "Collect clothing for children to prepare them for the new school year.",
+        "Price": 55
+    }
+]

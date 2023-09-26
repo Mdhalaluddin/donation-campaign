@@ -24,7 +24,8 @@ const myCrateRouter = createBrowserRouter([
             },
             {
                 path: '/statistics',
-                element: <Statistics></Statistics>
+                element: <Statistics></Statistics>,
+                loader: ()=> fetch('../../public/donate.json')
             },
             {
                 path: '/cards/:id',

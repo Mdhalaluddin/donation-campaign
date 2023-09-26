@@ -1,14 +1,13 @@
 .overlay{
     position: absolute; 
-    bottom: 0; 
-    width: 100%;
+    bottom: 210px; 
+    width: 43%;
     transition: .5s ease;
     color: #f1f1f1; 
     font-size: 20px;
     padding: 20px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
-    opacity:10;
-    
-    
+    opacity:5;
+
 }

@@ -1,8 +1,10 @@
+// import { useState } from "react";
 import Card from "../Card/Card";
 import PropTypes from 'prop-types';
 
 const Cards = ({cards}) => {
-    console.log(cards);
+    // const [displayCards, setDisplayCards] =useState([]);
+    // console.log(cards);
     return (
         <div className="container mx-auto grid lg:grid-cols-4 gap-4 md:mt-16 mt-10">
             {
@@ -13,7 +15,7 @@ const Cards = ({cards}) => {
     );
 };
 Cards.propTypes = {
-    cards: PropTypes.func
+    cards: PropTypes.string.isRequired
   };
 
 export default Cards;

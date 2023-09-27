@@ -15,22 +15,22 @@ const myCrateRouter = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: ()=> fetch('donate.json'),
+                loader: ()=> fetch('/donate.json'),
             },
             {
                 path: '/donation',
                 element: <Donation></Donation>,
-                loader: ()=> fetch('donate.json')
+                loader: ()=> fetch('/donate.json')
             },
             {
                 path: '/statistics',
                 element: <Statistics></Statistics>,
-                loader: ()=> fetch('donate.json')
+                loader: ()=> fetch('/donate.json')
             },
             {
                 path: '/cards/:id',
                 element: <DonateCard></DonateCard>,
-                loader: ()=> fetch('donate.json')
+                loader: ()=> fetch('/donate.json')
             }
         ]
     }

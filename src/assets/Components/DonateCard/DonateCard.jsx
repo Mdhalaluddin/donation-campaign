@@ -10,7 +10,7 @@ const DonateCard = () => {
     const cards = useLoaderData();
     const { id } = useParams();
     const intId = parseInt(id);
-    const card = cards.find(card => card.id === intId);
+    const card =cards?.find(card =>card.id === intId)
     const { Text_button_bg } = card;
     const handleNotify = () => {
         toast("You are a successfully donate!")

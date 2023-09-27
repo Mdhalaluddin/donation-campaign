@@ -2,6 +2,7 @@ import { useState } from "react";
 // import Card from "../Card/Card";
 
 
+
 const Banner = ({hanldeSearch}) => {
     const [searchData, setSearchData] = useState("")
     return (

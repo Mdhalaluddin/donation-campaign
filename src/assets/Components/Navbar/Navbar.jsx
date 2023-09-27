@@ -10,7 +10,7 @@ const Navbar = () => {
 return (
     <div className="navbar container mx-auto">
         <div className="flex-1 ">
-            <img className="w-[160px]" src={'../../../../public/Logo.png'} alt="" />
+            <img className="w-[160px]" src={'https://i.ibb.co/RjMvrFk/Logo.png'} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 bg-white">

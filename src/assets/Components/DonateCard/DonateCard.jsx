@@ -20,7 +20,7 @@ const DonateCard = () => {
 
     return (
         <section >
-            <div className="container mx-auto  grid justify-center mt-5 min-h-screen">
+            <div className="container mx-auto w-[950px] h-[200px]  grid justify-center mt-5 min-h-screen">
                 <div className=" card card-compact bg-slate-200 ">
                     <img className="w-full" src={card.img} alt="" />
                     <div className="overlay w-full">

@@ -1,38 +1,36 @@
-
-import { useEffect } from "react";
 import { Chart } from "react-google-charts";
 import { useLoaderData } from "react-router-dom";
 import { getStoredDonateCard } from "../../../Utility/localStored";
-// import { saveDonateCard } from "../../../Utility/localStored";
-var total = 100;
-var totalLocalStoreSum = 100;
+import { useState } from "react";
 
 
-const data = [
-    ["Task", "Hours per Day"],
-    ["Total Donation",  100],
-    ["Your Donation", 100 ],
-];
+
 const options = {
 };
 const Statistics = () => {
-    const cards = useLoaderData();
-    const total = cards.reduce((preValue, currentItem) => preValue + currentItem.Price, 0);
-            console.log(total);
-    console.log(cards)
-    useEffect(()=>{
+    // const cards = useLoaderData();
+    const [allCardData, setAllCardData]= useState()
+    const [donateLocalCardData, setDonateLocalCardData] = useState()
+
+    const totalAllCardData = useLoaderData();
+    const totalAllCardLength = totalAllCardData.length;
+    console.log(totalAllCardLength);
+    setAllCardData(totalAllCardLength);
+
         const localStoredSum = getStoredDonateCard()
-        const cardsDonate = cards.filter(card => localStoredSum.includes(card.id))
-        const totalLocalStoreSum = cardsDonate.reduce((preValue, currentItem) => preValue + currentItem.Price, 0);
-            console.log(totalLocalStoreSum);
-    },[cards]);
+        const localStoreLength = localStoredSum.length;
+        console.log(localStoreLength);
+        setDonateLocalCardData(localStoreLength);
+   
+    const data = [
+        [ "Task", "Hours per Day"],
+        [ "Total Donation",  `${setAllCardData}`],
+        [ "Your Donation", `${setDonateLocalCardData}` ],
+    ];
     return (
         <Chart chartType="PieChart"
         data={data}
         options={options}
-        // total ={100}
-        // totalLocalStoreSum = {100}
-        // position ={'button'}
         width={"120%"}
         height={"500px"} />
 
@@ -40,3 +38,5 @@ const Statistics = () => {
 };
 
 export default Statistics;
+
+

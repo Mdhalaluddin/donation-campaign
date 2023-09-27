@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Cards = ({cards}) => {
     // const [displayCards, setDisplayCards] =useState([]);
-    // console.log(cards);
+    console.log(cards);
     return (
         <div className="container mx-auto grid lg:grid-cols-4 gap-4 md:mt-16 mt-10">
             {
@@ -15,7 +15,7 @@ const Cards = ({cards}) => {
     );
 };
 Cards.propTypes = {
-    cards: PropTypes.string.isRequired
+    cards: PropTypes.array.isRequired
   };
 
 export default Cards;

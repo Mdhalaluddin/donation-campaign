@@ -1,8 +1,9 @@
-# React + Vite
+# Donation Campaign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Add my least 3 Project features
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This project fart of all Components crate or banner, cards, card, router, or localStored add components.
+-Navbar added or banner img add.
+-cards map all card add.
+-fake data lodding map show home page.
+-three page crate Home, Donation,Statistics. 

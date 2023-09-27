@@ -48,7 +48,7 @@ const Donation = () => {
             {/* className={donateCard === cards.length && "hidden"} */}
             {/* onClick={() => setCardLength(cards.length)} */}
             <nav className="card-actions justify-center">
-                <div className={donateLength === cards.length && 'hidden'} >
+                <div className={donateLength === cards.length && 'hidden'}>
                     <button onClick={()=>setDonateLength(cards.length)}
                         className="btn bg-[#009444] my-5 text-white">Show all</button>
                 </div>

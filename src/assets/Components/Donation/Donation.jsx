@@ -9,9 +9,10 @@ const Donation = () => {
     // console.log(cardLength);
 
     const [donateCard, setDonateCard] = useState([]);
-    const [cardLength, setCardLength] = useState(4);
+    // const [cardLength, setCardLength] = useState(4);
+    const [donateLength, setDonateLength] = useState(4);
     // const { Card_bg, Text_button_bg}= cards;
-    console.log(donateCard);
+    // console.log(setDonateCard);
 
     useEffect(() => {
         const storedCardIds = getStoredDonateCard();
@@ -28,7 +29,7 @@ const Donation = () => {
         <>
             <div className="grid lg:grid-cols-2 gap-4 container mx-auto mt-20 mb-7">
                 {
-                    donateCard.slice(0, cardLength).map(card => <div style={{ background: card.Card_bg }} key={card.id} className="card card-side bg-base-100 shadow-xl">
+                    donateCard.slice(0, donateLength).map(card => <div style={{ background: card.Card_bg }} key={card.id} className="card card-side bg-base-100 shadow-xl">
                         <figure><img className="w-full h-full" src={card.img} alt="" /></figure>
                         <div className="card-body">
                             <h2 className="card-title"></h2>
@@ -44,9 +45,11 @@ const Donation = () => {
                     </div>)
                 }
             </div>
-            <nav className={donateCard === cards.length && "hidden"}>
-                <div className="card-actions justify-center">
-                    <button onClick={() => setCardLength(cards.length)}
+            {/* className={donateCard === cards.length && "hidden"} */}
+            {/* onClick={() => setCardLength(cards.length)} */}
+            <nav className="card-actions justify-center">
+                <div className={donateLength === cards.length && 'hidden'} >
+                    <button onClick={()=>setDonateLength(cards.length)}
                         className="btn bg-[#009444] my-5 text-white">Show all</button>
                 </div>
             </nav>

@@ -1,8 +1,8 @@
 .overlay{
     position: absolute; 
-    bottom: 0; 
-    height: 50%;
-    width: 55%;
+    bottom: 36%; 
+    height: 15;
+    width: 0;
     transition: .5s ease;
     color: #f1f1f1; 
     font-size: 20px;

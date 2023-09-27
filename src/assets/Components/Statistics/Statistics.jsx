@@ -1,4 +1,5 @@
 
+import { useEffect } from "react";
 import { Chart } from "react-google-charts";
 import { useLoaderData } from "react-router-dom";
 
@@ -12,10 +13,14 @@ const options = {
 const Statistics = () => {
     const cards = useLoaderData();
     console.log(cards)
+    useEffect(()=>{
+
+    },[]);
     return (
         <Chart chartType="PieChart"
         data={data}
         options={options}
+        // position ={'button'}
         width={"120%"}
         height={"500px"} />
 

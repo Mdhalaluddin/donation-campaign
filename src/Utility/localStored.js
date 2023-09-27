@@ -4,7 +4,6 @@ const getStoredDonateCard =()=>{
         return JSON.parse(storedDonateCard);
     }
     return [];
-
 }
 
 const saveDonateCard = id =>{
@@ -15,5 +14,4 @@ const saveDonateCard = id =>{
         localStorage.setItem('donate-card', JSON.stringify (storedDonateCard));
     }
 }
-
 export { saveDonateCard, getStoredDonateCard}
